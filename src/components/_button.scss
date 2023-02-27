@@ -1,0 +1,25 @@
+.btn {
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+    cursor: pointer;
+    transition: box-shadow 0.5s ease-in-out, scale 0.5s ease-in-out;
+    border: none;
+    padding: var(--button-padding);
+    color: white;
+
+    &:hover {
+        box-shadow: var(--shadow-large);
+        scale: var(--button-scaling);
+    }
+
+    &-secondary {
+        background-color: var(--color-secondary);
+    }
+
+    &-action {
+        height: var(--button-action-size);
+        width: var(--button-action-size);
+        padding: 0;
+    }
+}
